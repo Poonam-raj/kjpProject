@@ -16,6 +16,10 @@ h1 {
     padding-top: 0px;
 }
 
+.about {
+    font-size: 25px
+}
+
 span {
     color: #d4320e;
 }
@@ -41,6 +45,7 @@ span {
 
 h4,
 h3,
+p,
 h2,
 label,
 nav {
@@ -84,4 +89,17 @@ nav {
 .siteNav a.active {
     background-color: #1d7d9e;
     color: white;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
 }
