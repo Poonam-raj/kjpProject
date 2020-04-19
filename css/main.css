@@ -24,6 +24,23 @@ span {
     color: #d4320e;
 }
 
+.flexContainer {
+    /* Your code here */
+    display: flex;
+    /* flex-direction: column; */
+    /* COlumn puts everything below each other like a column */
+    text-align: center;
+}
+
+.flexItem {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+
+img {
+    width: 400px;
+}
+
 .quizButton {
     background-color: #d4320e;
     border: none;
