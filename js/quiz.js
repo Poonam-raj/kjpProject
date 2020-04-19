@@ -20,8 +20,17 @@ document.getElementById("quizForm").onsubmit = function() {
         total = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8
 
 
+
+        var imageArray = ["img\1.jpg", "img\2.jpg", "img\3.jpg", "img\4.jpg", "img\5.jpg"]
+
+
         if (total <= 8) {
             document.getElementById("answer").innerHTML = "You got 'The Oblivious'.";
+            // var img1 = document.createElement('img1');
+            // img1.src = imageArray[0];
+            // var src = document.getElementById("answerImg");
+            // src.appendChild(img1);
+            document.getElementById("answerImg").appendChild(imageArray[0]);
         } else if (total > 8 && total <= 16) {
             document.getElementById("answer").innerHTML = "You got 'The Facebook Expert'.";
         } else if (total > 16 && total <= 24) {
@@ -34,3 +43,6 @@ document.getElementById("quizForm").onsubmit = function() {
 
         return false; // required to not refresh the page; just leave this here
     } // end the submit function
+
+
+// <img src="pages/Img/lofihiphop.girl.jpg">
