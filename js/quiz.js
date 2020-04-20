@@ -20,6 +20,10 @@ document.getElementById("quizForm").onsubmit = function() {
         total = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8
 
 
+
+        var imageArray = ["img\1.jpg", "img\2.jpg", "img\3.jpg", "img\4.jpg", "img\5.jpg"]
+
+
         if (total <= 8) {
             document.getElementById("answer").innerHTML = "You got 'The Oblivious'.";
         } else if (total > 8 && total <= 16) {
@@ -33,4 +37,23 @@ document.getElementById("quizForm").onsubmit = function() {
         }
 
         return false; // required to not refresh the page; just leave this here
+
+        // The below snips are what i attempted to make to pull the answer image through i have no idea what is going on.
+        // if (total <= 8) {
+        //     document.getElementById("answerImg").src = "img\1.jpg";
+        // } else if (total > 8 && total <= 16) {
+        //     document.getElementById("answerImg").src = "img\2.jpg";
+        // } else if (total > 16 && total <= 24) {
+        //     document.getElementById("answerImg").src = "img\3.jpg";
+        // } else if (total > 24 && total <= 32) {
+        //     document.getElementById("answerImg").src = "img\4.jpg";
+        // } else if (total > 32 && total <= 40) {
+        //     document.getElementById("answerImg").src = "img\5.jpg";
+        // }
+
+        // return false; // required to not refresh the page; just leave this here
+
     } // end the submit function
+
+
+// <img src="pages/Img/lofihiphop.girl.jpg">
