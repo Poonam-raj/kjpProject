@@ -26,11 +26,6 @@ document.getElementById("quizForm").onsubmit = function() {
 
         if (total <= 8) {
             document.getElementById("answer").innerHTML = "You got 'The Oblivious'.";
-            // var img1 = document.createElement('img1');
-            // img1.src = imageArray[0];
-            // var src = document.getElementById("answerImg");
-            // src.appendChild(img1);
-            document.getElementById("answerImg").appendChild(imageArray[0]);
         } else if (total > 8 && total <= 16) {
             document.getElementById("answer").innerHTML = "You got 'The Facebook Expert'.";
         } else if (total > 16 && total <= 24) {
@@ -42,6 +37,22 @@ document.getElementById("quizForm").onsubmit = function() {
         }
 
         return false; // required to not refresh the page; just leave this here
+
+        // The below snips are what i attempted to make to pull the answer image through i have no idea what is going on.
+        // if (total <= 8) {
+        //     document.getElementById("answerImg").src = "img\1.jpg";
+        // } else if (total > 8 && total <= 16) {
+        //     document.getElementById("answerImg").src = "img\2.jpg";
+        // } else if (total > 16 && total <= 24) {
+        //     document.getElementById("answerImg").src = "img\3.jpg";
+        // } else if (total > 24 && total <= 32) {
+        //     document.getElementById("answerImg").src = "img\4.jpg";
+        // } else if (total > 32 && total <= 40) {
+        //     document.getElementById("answerImg").src = "img\5.jpg";
+        // }
+
+        // return false; // required to not refresh the page; just leave this here
+
     } // end the submit function
 
 
